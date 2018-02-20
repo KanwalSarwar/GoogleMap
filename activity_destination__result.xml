@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.19"
+    tools:context="com.example.usamanaseer.googlemap.Destination_Result">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/share_back"
+        android:layout_weight="0.19">
+
+        <ImageView
+            android:src="@mipmap/logo_and_text"
+            android:id="@+id/destination_share"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.19"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+    android:id="@+id/linear_layout_one"
+    android:layout_below="@+id/linear_layout_imageview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="35dp"
+    android:layout_weight="0.19">
+
+
+    <ImageView
+        android:id="@+id/share_icon_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/share_icon_desti_one"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_toEndOf="@+id/share_icon_one"
+        android:layout_toRightOf="@+id/share_icon_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_two"
+        android:layout_below="@+id/linear_layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.19">
+
+        <ImageView
+            android:id="@+id/share_icon_two"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/share_icon_desti_two"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/place_address"
+            android:layout_toEndOf="@+id/share_icon_two"
+            android:layout_toRightOf="@+id/share_icon_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_three"
+        android:layout_below="@+id/linear_layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.19">
+
+        <ImageView
+            android:id="@+id/share_icon_three"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/share_icon_desti_three"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/place_phonenumber"
+            android:layout_toEndOf="@+id/share_icon_three"
+            android:layout_toRightOf="@+id/share_icon_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/share_app_button"
+        android:layout_below="@id/linear_layout_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/destinationsharebutton_icon"
+        android:layout_weight="0.19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/share_app_button"-->
+        <!--android:layout_below="@id/linear_layout_three"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="Share Details"-->
+        <!--android:textSize="17dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--/>-->
+
+
+
+</RelativeLayout>
